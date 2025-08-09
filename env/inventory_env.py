@@ -21,7 +21,7 @@ class InventoryEnv(gym.Env):
         max_capacity: int = 200,
         lead_times=(1, 1),
         demand_mu=(30, 25),
-        demand_season_amp=(10, 8),
+        demand_season_amp=(15, 12),
         rng_seed: int = 0,
         cost_params: CostParams | None = None,
         allow_transfers: bool = False,  # transfers come later
@@ -51,6 +51,10 @@ class InventoryEnv(gym.Env):
         self.observation_space = spaces.Box(low=0.0, high=high, dtype=np.float32)
         # Action: choose one discrete order level per warehouse
         self.action_space = spaces.MultiDiscrete([self.A]*self.W)
+
+        # spike state (multi-step spikes)
+        self._spike_left = 0
+        self._current_spike_mult = 1.0
 
         self._reset_internal()
 
@@ -144,6 +148,9 @@ class InventoryEnv(gym.Env):
         self.in_transit = np.zeros(self.W, dtype=np.int32)
         self.pipeline = {w: [] for w in range(self.W)}  # list[(arrive_t, qty)]
         self._last_demand = np.zeros(self.W, dtype=np.int32)
+        # reset spike state
+        self._spike_left = 0
+        self._current_spike_mult = 1.0
 
     def _observe(self):
         forecast = self._forecast(self.t)
@@ -151,7 +158,7 @@ class InventoryEnv(gym.Env):
         return obs
 
     def _forecast(self, t):
-        # Naive Day 1: use last demand as the forecast; at t=0 use seasonal mean
+        # Naive: use last demand as the forecast; at t=0 use seasonal mean
         if self.t == 0:
             return self._seasonal_mean(t).astype(np.float32)
         return self._last_demand.astype(np.float32)
@@ -162,19 +169,44 @@ class InventoryEnv(gym.Env):
         return self.demand_mu * season
 
     def _sample_demand(self, t):
-        # Poisson around seasonal mean + small Gaussian perturbation scaled by amp
-        mean = self._seasonal_mean(t) + self.rng.normal(0, 0.1, size=self.W) * self.demand_season_amp
+        """
+        Strong seasonality + multi-step spikes so forecasting matters.
+        Spikes persist 2–3 steps once triggered.
+        """
+        base_mean = self._seasonal_mean(t)
+
+        # Multi-step spikes: if ongoing, continue; else maybe start one
+        if self._spike_left > 0:
+            spike_multiplier = self._current_spike_mult
+            self._spike_left -= 1
+        else:
+            if self.rng.random() < 0.15:  # 15% chance to start a spike
+                self._spike_left = int(self.rng.integers(2, 4))  # 2–3 steps duration
+                self._current_spike_mult = float(self.rng.uniform(1.5, 2.2))  # 50–120% higher
+                spike_multiplier = self._current_spike_mult
+            else:
+                spike_multiplier = 1.0
+
+        # Add normal noise scaled by demand_season_amp
+        noisy_mean = base_mean + self.rng.normal(0, 0.1, size=self.W) * self.demand_season_amp
+
+        # Apply spike
+        mean = noisy_mean * spike_multiplier
         mean = np.clip(mean, 0.1, None)
+
+        # Poisson sampling for realism
         demand = self.rng.poisson(mean).astype(np.int32)
+
         self._last_demand = demand.copy()
         return demand
+
 
 if __name__ == "__main__":
     from custom_tools.cost_simulation_tool import CostParams
 
     env = InventoryEnv(
         n_warehouses=2,
-        horizon=10,  # shorter for quick test
+        horizon=52,  # longer horizon to see spikes/seasonality
         cost_params=CostParams(holding_cost=1.0, stockout_cost=5.0, order_cost=0.5)
     )
 
@@ -188,4 +220,6 @@ if __name__ == "__main__":
         obs, reward, terminated, truncated, info = env.step(action)
         total_reward += reward
         done = terminated or truncated
-        print(f"Step {env.t}: action={action}, reward={reward:.2f}, info={info}")
+        print(f"Step {env.t}: action={action}, reward={reward:.2f}, info={{'holding': {info['holding_cost']:.2f}, 'stockout': {info['stockout_cost']:.2f}, 'order': {info['order_cost']:.2f}, 'svc': {info['service_level']:.3f}}}")
+
+    print(f"✅ Rollout finished. Total reward: {total_reward:.2f}")

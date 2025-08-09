@@ -1,0 +1,1302 @@
+[
+  {
+    "step": 1,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -62.0,
+    "holding_cost": 32.0,
+    "stockout_cost": 0.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      39,
+      29
+    ],
+    "fulfilled": [
+      39,
+      29
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 2,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -54.0,
+    "holding_cost": 24.0,
+    "stockout_cost": 0.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      38,
+      30
+    ],
+    "fulfilled": [
+      38,
+      30
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 3,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -61.0,
+    "holding_cost": 31.0,
+    "stockout_cost": 0.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      32,
+      21
+    ],
+    "fulfilled": [
+      32,
+      21
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 4,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -102.0,
+    "holding_cost": 27.0,
+    "stockout_cost": 45.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      40,
+      33
+    ],
+    "fulfilled": [
+      31,
+      33
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.8767123287671232
+  },
+  {
+    "step": 5,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -78.0,
+    "holding_cost": 28.0,
+    "stockout_cost": 20.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      34,
+      29
+    ],
+    "fulfilled": [
+      30,
+      29
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.9365079365079365
+  },
+  {
+    "step": 6,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -100.0,
+    "holding_cost": 30.0,
+    "stockout_cost": 40.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      38,
+      28
+    ],
+    "fulfilled": [
+      30,
+      28
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.8787878787878788
+  },
+  {
+    "step": 7,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -465.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 435.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      107,
+      70
+    ],
+    "fulfilled": [
+      30,
+      60
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.5084745762711864
+  },
+  {
+    "step": 8,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -35.0,
+    "holding_cost": 5.0,
+    "stockout_cost": 0.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      28,
+      27
+    ],
+    "fulfilled": [
+      28,
+      27
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 9,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -90.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 60.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      40,
+      37
+    ],
+    "fulfilled": [
+      32,
+      33
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.8441558441558441
+  },
+  {
+    "step": 10,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -130.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 100.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      42,
+      38
+    ],
+    "fulfilled": [
+      30,
+      30
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.75
+  },
+  {
+    "step": 11,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -75.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 45.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      34,
+      35
+    ],
+    "fulfilled": [
+      30,
+      30
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.8695652173913043
+  },
+  {
+    "step": 12,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -205.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 175.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      47,
+      48
+    ],
+    "fulfilled": [
+      30,
+      30
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.631578947368421
+  },
+  {
+    "step": 13,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -175.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 145.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      46,
+      43
+    ],
+    "fulfilled": [
+      30,
+      30
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.6741573033707865
+  },
+  {
+    "step": 14,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -75.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 45.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      31,
+      38
+    ],
+    "fulfilled": [
+      30,
+      30
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.8695652173913043
+  },
+  {
+    "step": 15,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -157.0,
+    "holding_cost": 2.0,
+    "stockout_cost": 125.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      55,
+      28
+    ],
+    "fulfilled": [
+      30,
+      28
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.6987951807228916
+  },
+  {
+    "step": 16,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -115.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 85.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      45,
+      34
+    ],
+    "fulfilled": [
+      30,
+      32
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.7848101265822784
+  },
+  {
+    "step": 17,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -195.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 165.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      47,
+      46
+    ],
+    "fulfilled": [
+      30,
+      30
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.6451612903225806
+  },
+  {
+    "step": 18,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -200.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 170.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      51,
+      43
+    ],
+    "fulfilled": [
+      30,
+      30
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.6382978723404256
+  },
+  {
+    "step": 19,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -160.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 130.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      39,
+      47
+    ],
+    "fulfilled": [
+      30,
+      30
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.6976744186046512
+  },
+  {
+    "step": 20,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -85.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 55.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      40,
+      31
+    ],
+    "fulfilled": [
+      30,
+      30
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.8450704225352113
+  },
+  {
+    "step": 21,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -115.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 85.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      36,
+      41
+    ],
+    "fulfilled": [
+      30,
+      30
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.7792207792207793
+  },
+  {
+    "step": 22,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -103.0,
+    "holding_cost": 3.0,
+    "stockout_cost": 70.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      44,
+      27
+    ],
+    "fulfilled": [
+      30,
+      27
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.8028169014084507
+  },
+  {
+    "step": 23,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -46.0,
+    "holding_cost": 1.0,
+    "stockout_cost": 15.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      33,
+      32
+    ],
+    "fulfilled": [
+      30,
+      32
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.9538461538461538
+  },
+  {
+    "step": 24,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -66.0,
+    "holding_cost": 1.0,
+    "stockout_cost": 35.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      37,
+      30
+    ],
+    "fulfilled": [
+      30,
+      30
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.8955223880597015
+  },
+  {
+    "step": 25,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -110.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 80.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      36,
+      41
+    ],
+    "fulfilled": [
+      30,
+      31
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.7922077922077921
+  },
+  {
+    "step": 26,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -51.0,
+    "holding_cost": 1.0,
+    "stockout_cost": 20.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      34,
+      29
+    ],
+    "fulfilled": [
+      30,
+      29
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.9365079365079365
+  },
+  {
+    "step": 27,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -100.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 70.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      43,
+      32
+    ],
+    "fulfilled": [
+      30,
+      31
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.8133333333333334
+  },
+  {
+    "step": 28,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -185.0,
+    "holding_cost": 0.0,
+    "stockout_cost": 155.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      51,
+      40
+    ],
+    "fulfilled": [
+      30,
+      30
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.6593406593406593
+  },
+  {
+    "step": 29,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -52.0,
+    "holding_cost": 7.0,
+    "stockout_cost": 15.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      33,
+      23
+    ],
+    "fulfilled": [
+      30,
+      23
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.9464285714285714
+  },
+  {
+    "step": 30,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -53.0,
+    "holding_cost": 13.0,
+    "stockout_cost": 10.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      32,
+      24
+    ],
+    "fulfilled": [
+      30,
+      24
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 0.9642857142857143
+  },
+  {
+    "step": 31,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -51.0,
+    "holding_cost": 21.0,
+    "stockout_cost": 0.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      30,
+      22
+    ],
+    "fulfilled": [
+      30,
+      22
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 32,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -64.0,
+    "holding_cost": 34.0,
+    "stockout_cost": 0.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      24,
+      23
+    ],
+    "fulfilled": [
+      24,
+      23
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 33,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -93.0,
+    "holding_cost": 63.0,
+    "stockout_cost": 0.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      18,
+      13
+    ],
+    "fulfilled": [
+      18,
+      13
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 34,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -75.0,
+    "holding_cost": 45.0,
+    "stockout_cost": 0.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      44,
+      34
+    ],
+    "fulfilled": [
+      44,
+      34
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 35,
+    "action": [
+      3,
+      3
+    ],
+    "reward": -104.0,
+    "holding_cost": 74.0,
+    "stockout_cost": 0.0,
+    "order_cost": 30.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      18,
+      13
+    ],
+    "fulfilled": [
+      18,
+      13
+    ],
+    "orders": [
+      30,
+      30
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 36,
+    "action": [
+      3,
+      2
+    ],
+    "reward": -120.0,
+    "holding_cost": 95.0,
+    "stockout_cost": 0.0,
+    "order_cost": 25.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      17,
+      22
+    ],
+    "fulfilled": [
+      17,
+      22
+    ],
+    "orders": [
+      30,
+      20
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 37,
+    "action": [
+      3,
+      1
+    ],
+    "reward": -134.0,
+    "holding_cost": 114.0,
+    "stockout_cost": 0.0,
+    "order_cost": 20.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      18,
+      13
+    ],
+    "fulfilled": [
+      18,
+      13
+    ],
+    "orders": [
+      30,
+      10
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 38,
+    "action": [
+      3,
+      0
+    ],
+    "reward": -145.0,
+    "holding_cost": 130.0,
+    "stockout_cost": 0.0,
+    "order_cost": 15.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      11,
+      13
+    ],
+    "fulfilled": [
+      11,
+      13
+    ],
+    "orders": [
+      30,
+      0
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 39,
+    "action": [
+      2,
+      1
+    ],
+    "reward": -150.0,
+    "holding_cost": 135.0,
+    "stockout_cost": 0.0,
+    "order_cost": 15.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      12,
+      13
+    ],
+    "fulfilled": [
+      12,
+      13
+    ],
+    "orders": [
+      20,
+      10
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 40,
+    "action": [
+      0,
+      2
+    ],
+    "reward": -149.0,
+    "holding_cost": 139.0,
+    "stockout_cost": 0.0,
+    "order_cost": 10.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      12,
+      14
+    ],
+    "fulfilled": [
+      12,
+      14
+    ],
+    "orders": [
+      0,
+      20
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 41,
+    "action": [
+      0,
+      3
+    ],
+    "reward": -141.0,
+    "holding_cost": 126.0,
+    "stockout_cost": 0.0,
+    "order_cost": 15.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      16,
+      17
+    ],
+    "fulfilled": [
+      16,
+      17
+    ],
+    "orders": [
+      0,
+      30
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 42,
+    "action": [
+      1,
+      2
+    ],
+    "reward": -138.0,
+    "holding_cost": 123.0,
+    "stockout_cost": 0.0,
+    "order_cost": 15.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      19,
+      14
+    ],
+    "fulfilled": [
+      19,
+      14
+    ],
+    "orders": [
+      10,
+      20
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 43,
+    "action": [
+      3,
+      1
+    ],
+    "reward": -127.0,
+    "holding_cost": 107.0,
+    "stockout_cost": 0.0,
+    "order_cost": 20.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      19,
+      27
+    ],
+    "fulfilled": [
+      19,
+      27
+    ],
+    "orders": [
+      30,
+      10
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 44,
+    "action": [
+      3,
+      2
+    ],
+    "reward": -136.0,
+    "holding_cost": 111.0,
+    "stockout_cost": 0.0,
+    "order_cost": 25.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      17,
+      19
+    ],
+    "fulfilled": [
+      17,
+      19
+    ],
+    "orders": [
+      30,
+      20
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 45,
+    "action": [
+      2,
+      2
+    ],
+    "reward": -157.0,
+    "holding_cost": 137.0,
+    "stockout_cost": 0.0,
+    "order_cost": 20.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      11,
+      13
+    ],
+    "fulfilled": [
+      11,
+      13
+    ],
+    "orders": [
+      20,
+      20
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 46,
+    "action": [
+      1,
+      2
+    ],
+    "reward": -165.0,
+    "holding_cost": 150.0,
+    "stockout_cost": 0.0,
+    "order_cost": 15.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      12,
+      15
+    ],
+    "fulfilled": [
+      12,
+      15
+    ],
+    "orders": [
+      10,
+      20
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 47,
+    "action": [
+      0,
+      1
+    ],
+    "reward": -123.0,
+    "holding_cost": 118.0,
+    "stockout_cost": 0.0,
+    "order_cost": 5.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      29,
+      33
+    ],
+    "fulfilled": [
+      29,
+      33
+    ],
+    "orders": [
+      0,
+      10
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 48,
+    "action": [
+      2,
+      3
+    ],
+    "reward": -114.0,
+    "holding_cost": 89.0,
+    "stockout_cost": 0.0,
+    "order_cost": 25.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      29,
+      10
+    ],
+    "fulfilled": [
+      29,
+      10
+    ],
+    "orders": [
+      20,
+      30
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 49,
+    "action": [
+      3,
+      2
+    ],
+    "reward": -134.0,
+    "holding_cost": 109.0,
+    "stockout_cost": 0.0,
+    "order_cost": 25.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      15,
+      15
+    ],
+    "fulfilled": [
+      15,
+      15
+    ],
+    "orders": [
+      30,
+      20
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 50,
+    "action": [
+      3,
+      1
+    ],
+    "reward": -123.0,
+    "holding_cost": 103.0,
+    "stockout_cost": 0.0,
+    "order_cost": 20.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      31,
+      25
+    ],
+    "fulfilled": [
+      31,
+      25
+    ],
+    "orders": [
+      30,
+      10
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 51,
+    "action": [
+      3,
+      1
+    ],
+    "reward": -114.0,
+    "holding_cost": 94.0,
+    "stockout_cost": 0.0,
+    "order_cost": 20.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      30,
+      19
+    ],
+    "fulfilled": [
+      30,
+      19
+    ],
+    "orders": [
+      30,
+      10
+    ],
+    "service_level": 1.0
+  },
+  {
+    "step": 52,
+    "action": [
+      3,
+      2
+    ],
+    "reward": -106.0,
+    "holding_cost": 81.0,
+    "stockout_cost": 0.0,
+    "order_cost": 25.0,
+    "transfer_cost": 0.0,
+    "demand": [
+      30,
+      23
+    ],
+    "fulfilled": [
+      30,
+      23
+    ],
+    "orders": [
+      30,
+      20
+    ],
+    "service_level": 1.0
+  }
+]
