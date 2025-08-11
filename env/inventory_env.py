@@ -1,3 +1,4 @@
+# env> inventory_env.py
 import numpy as np
 import gymnasium as gym
 from gymnasium import spaces
@@ -17,14 +18,16 @@ class InventoryEnv(gym.Env):
         self,
         n_warehouses: int = 2,
         horizon: int = 52,
-        action_levels=(0, 10, 20, 30),
+        action_levels=(0, 10, 20, 40, 60, 80),
         max_capacity: int = 200,
         lead_times=(1, 1),
         demand_mu=(30, 25),
         demand_season_amp=(15, 12),
         rng_seed: int = 0,
         cost_params: CostParams | None = None,
-        allow_transfers: bool = False,  # transfers come later
+        allow_transfers: bool = False, 
+        target_service: float = 0.90,
+        below_target_mult: float = 1.5,
     ):
         super().__init__()
         # config
@@ -39,6 +42,8 @@ class InventoryEnv(gym.Env):
         self.allow_transfers = allow_transfers
         self.cost_params = cost_params or CostParams()
         self.rng = np.random.default_rng(rng_seed)
+        self.target_service = float(target_service)
+        self.below_target_mult = float(below_target_mult)
 
         # Observation: [stock(W), forecast(W), in_transit(W), time_idx]
         high = np.array(
@@ -117,7 +122,17 @@ class InventoryEnv(gym.Env):
             transferred_units=transferred_units,
             p=self.cost_params,
         )
-        reward = -float(costs["total"])
+        # Per-step service (fraction of demand fulfilled this step)
+        step_service = 1.0 - (np.sum(stockouts_units) / max(1, np.sum(demand)))
+        
+        shortfall = max(0.0, self.target_service - step_service)   # e.g., 0.92 - 0.80 = 0.12
+
+        # If below target, amplify stockout cost this step
+        stockout_mult = 1.0 + self.below_target_mult * shortfall
+
+        # Recompose total with shaped stockout cost
+        total_cost = costs["holding"] + costs["order"] + costs["transfer"] + stockout_mult * costs["stockout"]
+        reward = -float(total_cost)
 
         # log, advance time
         self.t += 1
@@ -132,7 +147,8 @@ class InventoryEnv(gym.Env):
             "demand": demand,
             "fulfilled": fulfilled,
             "orders": orders,
-            "service_level": 1.0 - (np.sum(stockouts_units) / max(1, np.sum(demand))),
+            "stockout_mult": stockout_mult,
+            "service_level": step_service,
         }
         return self._observe(), reward, terminated, truncated, info
 
@@ -221,5 +237,7 @@ if __name__ == "__main__":
         total_reward += reward
         done = terminated or truncated
         print(f"Step {env.t}: action={action}, reward={reward:.2f}, info={{'holding': {info['holding_cost']:.2f}, 'stockout': {info['stockout_cost']:.2f}, 'order': {info['order_cost']:.2f}, 'svc': {info['service_level']:.3f}}}")
+        print(f"Env knobs → target_service={env.target_service}, below_target_mult={env.below_target_mult}")
+
 
     print(f"✅ Rollout finished. Total reward: {total_reward:.2f}")

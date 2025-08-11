@@ -1,0 +1,9 @@
+{
+  "episodes": 100,
+  "mean_total_cost": 6503.905,
+  "std_total_cost": 354.7285208085192,
+  "mean_service": 0.9885081937704869,
+  "mean_holding": 4273.14,
+  "mean_stockout": 348.4,
+  "mean_order": 1882.365
+}

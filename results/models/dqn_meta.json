@@ -1,0 +1,9 @@
+{
+  "algo": "dqn",
+  "episodes": 10000,
+  "horizon": 52,
+  "seed": 42,
+  "model_path": "results/models/dqn_W2.zip",
+  "target_service": 0.92,
+  "below_target_mult": 12.0
+}

@@ -13,7 +13,7 @@ class CostParams:
     holding_cost: float = 1.0
     stockout_cost: float = 5.0
     order_cost: float = 0.5
-    transfer_cost: float = 0.2  # not used on Day 1
+    transfer_cost: float = 0.2 
 
 def compute_costs(holding_units: float,
                   stockout_units: float,

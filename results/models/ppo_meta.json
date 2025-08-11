@@ -1,0 +1,9 @@
+{
+  "algo": "ppo",
+  "episodes": 8000,
+  "horizon": 52,
+  "seed": 1,
+  "model_path": "results/models/ppo_W2.zip",
+  "target_service": 0.95,
+  "below_target_mult": 10.0
+}
