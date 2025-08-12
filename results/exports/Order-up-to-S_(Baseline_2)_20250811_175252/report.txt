@@ -1,0 +1,32 @@
+============================================================
+INVENTORY OPTIMIZATION REPORT
+Policy: Order-up-to-S (Baseline 2)
+Generated: 2025-08-11 17:52:53
+============================================================
+
+SUMMARY STATISTICS
+------------------------------
+Mean Total Cost: $326734.05
+Std Total Cost: $10842.60
+Mean Service Level: 86.5%
+Mean Holding Cost: $38.81
+Mean Stockout Cost: $550.31
+Mean Order Cost: $5694.23
+
+EPISODE ANALYSIS
+------------------------------
+Total Episodes: 10
+Best Episode: 1 ($309374.00)
+Worst Episode: 4 ($343043.50)
+Learning Progress: -1.6% improvement
+
+COST BREAKDOWN
+------------------------------
+Holding: 0.6%
+Stockout: 8.8%
+Order: 90.6%
+
+RECOMMENDATIONS
+------------------------------
+⚠ Service level below target - consider increasing safety stock
+✓ Cost distribution is balanced

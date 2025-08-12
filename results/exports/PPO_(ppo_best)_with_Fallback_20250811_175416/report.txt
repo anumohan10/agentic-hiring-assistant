@@ -1,0 +1,32 @@
+============================================================
+INVENTORY OPTIMIZATION REPORT
+Policy: PPO (ppo_best) with Fallback
+Generated: 2025-08-11 17:54:17
+============================================================
+
+SUMMARY STATISTICS
+------------------------------
+Mean Total Cost: $257243.45
+Std Total Cost: $7171.68
+Mean Service Level: 61.5%
+Mean Holding Cost: $1.49
+Mean Stockout Cost: $1307.04
+Mean Order Cost: $3638.46
+
+EPISODE ANALYSIS
+------------------------------
+Total Episodes: 10
+Best Episode: 6 ($248802.50)
+Worst Episode: 0 ($266818.00)
+Learning Progress: 2.0% improvement
+
+COST BREAKDOWN
+------------------------------
+Holding: 0.0%
+Stockout: 26.4%
+Order: 73.5%
+
+RECOMMENDATIONS
+------------------------------
+⚠ Service level below target - consider increasing safety stock
+✓ Cost distribution is balanced

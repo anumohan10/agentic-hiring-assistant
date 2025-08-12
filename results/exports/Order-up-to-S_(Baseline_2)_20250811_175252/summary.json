@@ -1,0 +1,9 @@
+{
+  "mean_total_cost": 326734.05,
+  "std_total_cost": 10842.603894936861,
+  "mean_service": 0.8653101788981363,
+  "std_service": 0.014512189854005472,
+  "mean_holding": 38.808653846153845,
+  "mean_stockout": 550.3076923076923,
+  "mean_order": 5694.2307692307695
+}
